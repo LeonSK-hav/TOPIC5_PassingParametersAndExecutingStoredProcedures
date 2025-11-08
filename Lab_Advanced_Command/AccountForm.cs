@@ -465,5 +465,27 @@ namespace Lab_Advanced_Command
                 frm.ShowDialog();
             }
         }
+
+        private void tsmViewRoles_Click(object sender, EventArgs e)
+        {
+            if (dgvAccount.CurrentRow == null)
+            {
+                MessageBox.Show("Vui lòng chọn tài khoản trước!");
+                return;
+            }
+
+            string accountName = dgvAccount.CurrentRow.Cells["AccountName"].Value.ToString();
+
+            RolesViewForm frm = new RolesViewForm(accountName);
+            frm.ShowDialog();
+            LoadAllRolesToCheckList();
+        }
+
+        private void tsmActivityLog_Click(object sender, EventArgs e)
+        {
+            string accountName = txtAccountName.Text.Trim();
+            ActivityLogForm frm = new ActivityLogForm(accountName);
+            frm.ShowDialog();
+        }
     }
 }

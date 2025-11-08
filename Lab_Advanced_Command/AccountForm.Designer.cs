@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnAddRole = new System.Windows.Forms.Button();
             this.clbRoles = new System.Windows.Forms.CheckedListBox();
             this.dtpDateCreated = new System.Windows.Forms.DateTimePicker();
             this.chkActive = new System.Windows.Forms.CheckBox();
@@ -54,10 +55,9 @@
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.dgvAccount = new System.Windows.Forms.DataGridView();
-            this.btnAddRole = new System.Windows.Forms.Button();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.xemDanhSáchCácVaiTròToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.xemNhậtKýHoạtĐộngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmViewRoles = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmActivityLog = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAccount)).BeginInit();
@@ -89,6 +89,16 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin tài khoản";
+            // 
+            // btnAddRole
+            // 
+            this.btnAddRole.Location = new System.Drawing.Point(986, 72);
+            this.btnAddRole.Name = "btnAddRole";
+            this.btnAddRole.Size = new System.Drawing.Size(145, 39);
+            this.btnAddRole.TabIndex = 15;
+            this.btnAddRole.Text = "Thêm vai trò";
+            this.btnAddRole.UseVisualStyleBackColor = true;
+            this.btnAddRole.Click += new System.EventHandler(this.btnAddRole_Click);
             // 
             // clbRoles
             // 
@@ -300,6 +310,7 @@
             // dgvAccount
             // 
             this.dgvAccount.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvAccount.ContextMenuStrip = this.contextMenuStrip1;
             this.dgvAccount.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dgvAccount.Location = new System.Drawing.Point(0, 488);
             this.dgvAccount.Name = "dgvAccount";
@@ -309,36 +320,28 @@
             this.dgvAccount.TabIndex = 2;
             this.dgvAccount.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAccount_CellClick);
             // 
-            // btnAddRole
-            // 
-            this.btnAddRole.Location = new System.Drawing.Point(986, 72);
-            this.btnAddRole.Name = "btnAddRole";
-            this.btnAddRole.Size = new System.Drawing.Size(145, 39);
-            this.btnAddRole.TabIndex = 15;
-            this.btnAddRole.Text = "Thêm vai trò";
-            this.btnAddRole.UseVisualStyleBackColor = true;
-            this.btnAddRole.Click += new System.EventHandler(this.btnAddRole_Click);
-            // 
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.xemDanhSáchCácVaiTròToolStripMenuItem,
-            this.xemNhậtKýHoạtĐộngToolStripMenuItem});
+            this.tsmViewRoles,
+            this.tsmActivityLog});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(251, 52);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(251, 80);
             // 
-            // xemDanhSáchCácVaiTròToolStripMenuItem
+            // tsmViewRoles
             // 
-            this.xemDanhSáchCácVaiTròToolStripMenuItem.Name = "xemDanhSáchCácVaiTròToolStripMenuItem";
-            this.xemDanhSáchCácVaiTròToolStripMenuItem.Size = new System.Drawing.Size(250, 24);
-            this.xemDanhSáchCácVaiTròToolStripMenuItem.Text = "Xem danh sách các vai trò";
+            this.tsmViewRoles.Name = "tsmViewRoles";
+            this.tsmViewRoles.Size = new System.Drawing.Size(250, 24);
+            this.tsmViewRoles.Text = "Xem danh sách các vai trò";
+            this.tsmViewRoles.Click += new System.EventHandler(this.tsmViewRoles_Click);
             // 
-            // xemNhậtKýHoạtĐộngToolStripMenuItem
+            // tsmActivityLog
             // 
-            this.xemNhậtKýHoạtĐộngToolStripMenuItem.Name = "xemNhậtKýHoạtĐộngToolStripMenuItem";
-            this.xemNhậtKýHoạtĐộngToolStripMenuItem.Size = new System.Drawing.Size(250, 24);
-            this.xemNhậtKýHoạtĐộngToolStripMenuItem.Text = "Xem nhật ký hoạt động";
+            this.tsmActivityLog.Name = "tsmActivityLog";
+            this.tsmActivityLog.Size = new System.Drawing.Size(250, 24);
+            this.tsmActivityLog.Text = "Xem nhật ký hoạt động";
+            this.tsmActivityLog.Click += new System.EventHandler(this.tsmActivityLog_Click);
             // 
             // AccountForm
             // 
@@ -390,7 +393,7 @@
         private System.Windows.Forms.CheckedListBox clbRoles;
         private System.Windows.Forms.Button btnAddRole;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem xemDanhSáchCácVaiTròToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem xemNhậtKýHoạtĐộngToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tsmViewRoles;
+        private System.Windows.Forms.ToolStripMenuItem tsmActivityLog;
     }
 }
