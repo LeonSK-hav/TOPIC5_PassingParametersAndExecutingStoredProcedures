@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RolesViewForm));
             this.dgvRoles = new System.Windows.Forms.DataGridView();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.RoleName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,6 +44,7 @@
             // 
             // dgvRoles
             // 
+            this.dgvRoles.BackgroundColor = System.Drawing.SystemColors.InfoText;
             this.dgvRoles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvRoles.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
@@ -81,16 +83,18 @@
             // 
             // panel1
             // 
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.Controls.Add(this.btnCancel);
             this.panel1.Controls.Add(this.btnUpdate);
             this.panel1.Controls.Add(this.btnAddNew);
-            this.panel1.Location = new System.Drawing.Point(2, 440);
+            this.panel1.Location = new System.Drawing.Point(12, 440);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(797, 100);
+            this.panel1.Size = new System.Drawing.Size(776, 89);
             this.panel1.TabIndex = 1;
             // 
             // btnCancel
             // 
+            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.Location = new System.Drawing.Point(578, 28);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(151, 45);
@@ -101,6 +105,7 @@
             // 
             // btnUpdate
             // 
+            this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.Location = new System.Drawing.Point(322, 28);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(151, 45);
@@ -111,6 +116,7 @@
             // 
             // btnAddNew
             // 
+            this.btnAddNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddNew.Location = new System.Drawing.Point(78, 28);
             this.btnAddNew.Name = "btnAddNew";
             this.btnAddNew.Size = new System.Drawing.Size(151, 45);
@@ -123,9 +129,10 @@
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.Location = new System.Drawing.Point(0, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(44, 16);
+            this.lblTitle.Size = new System.Drawing.Size(64, 25);
             this.lblTitle.TabIndex = 2;
             this.lblTitle.Text = "label1";
             // 
@@ -133,6 +140,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(800, 541);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.panel1);

@@ -487,5 +487,7 @@ namespace Lab_Advanced_Command
             ActivityLogForm frm = new ActivityLogForm(accountName);
             frm.ShowDialog();
         }
+
+        
     }
 }

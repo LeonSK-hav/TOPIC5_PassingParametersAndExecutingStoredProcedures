@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddCategoryForm));
             this.txtCategoryName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnAdd = new System.Windows.Forms.Button();
@@ -38,6 +39,7 @@
             // txtCategoryName
             // 
             this.txtCategoryName.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCategoryName.ForeColor = System.Drawing.Color.MediumVioletRed;
             this.txtCategoryName.Location = new System.Drawing.Point(326, 83);
             this.txtCategoryName.Name = "txtCategoryName";
             this.txtCategoryName.Size = new System.Drawing.Size(393, 38);
@@ -47,18 +49,20 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.IndianRed;
             this.label1.Location = new System.Drawing.Point(40, 89);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(204, 32);
+            this.label1.Size = new System.Drawing.Size(217, 32);
             this.label1.TabIndex = 1;
-            this.label1.Text = "CategoryName";
+            this.label1.Text = "Tên loại món ăn";
             // 
             // btnAdd
             // 
-            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.Font = new System.Drawing.Font("Vladimir Script", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.ForeColor = System.Drawing.Color.MediumVioletRed;
             this.btnAdd.Location = new System.Drawing.Point(113, 246);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(215, 54);
+            this.btnAdd.Size = new System.Drawing.Size(241, 60);
             this.btnAdd.TabIndex = 2;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -66,10 +70,11 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.Font = new System.Drawing.Font("Vladimir Script", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.ForeColor = System.Drawing.Color.MediumVioletRed;
             this.btnCancel.Location = new System.Drawing.Point(454, 246);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(215, 54);
+            this.btnCancel.Size = new System.Drawing.Size(241, 60);
             this.btnCancel.TabIndex = 3;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -78,6 +83,7 @@
             // cbbType
             // 
             this.cbbType.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbbType.ForeColor = System.Drawing.Color.MediumVioletRed;
             this.cbbType.FormattingEnabled = true;
             this.cbbType.Location = new System.Drawing.Point(326, 159);
             this.cbbType.Name = "cbbType";
@@ -88,6 +94,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(800, 341);
             this.Controls.Add(this.cbbType);
             this.Controls.Add(this.btnCancel);
@@ -95,7 +102,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtCategoryName);
             this.Name = "AddCategoryForm";
-            this.Text = "AddCategoryForm";
+            this.Text = "Thêm loại món ăn";
             this.ResumeLayout(false);
             this.PerformLayout();
 

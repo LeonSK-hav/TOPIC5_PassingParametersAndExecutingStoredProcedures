@@ -78,5 +78,7 @@ namespace Lab_Advanced_Command
                 detailForm.ShowDialog();
             }
         }
+
+        
     }
 }

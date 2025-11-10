@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmChangePassword));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -41,59 +42,66 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(122, 71);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(68, 37);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 16);
+            this.label1.Size = new System.Drawing.Size(146, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "Mật khẩu cũ:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(122, 112);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(68, 106);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 16);
+            this.label2.Size = new System.Drawing.Size(161, 29);
             this.label2.TabIndex = 1;
             this.label2.Text = "Mật khẩu mới:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(122, 155);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(68, 174);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(122, 16);
+            this.label3.Size = new System.Drawing.Size(221, 29);
             this.label3.TabIndex = 2;
             this.label3.Text = "Xác nhận mật khẩu:";
             // 
             // txtOldPassword
             // 
-            this.txtOldPassword.Location = new System.Drawing.Point(352, 68);
+            this.txtOldPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOldPassword.Location = new System.Drawing.Point(352, 32);
             this.txtOldPassword.Name = "txtOldPassword";
             this.txtOldPassword.PasswordChar = '*';
-            this.txtOldPassword.Size = new System.Drawing.Size(297, 22);
+            this.txtOldPassword.Size = new System.Drawing.Size(378, 34);
             this.txtOldPassword.TabIndex = 3;
             // 
             // txtNewPassword
             // 
+            this.txtNewPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNewPassword.Location = new System.Drawing.Point(352, 106);
             this.txtNewPassword.Name = "txtNewPassword";
             this.txtNewPassword.PasswordChar = '*';
-            this.txtNewPassword.Size = new System.Drawing.Size(297, 22);
+            this.txtNewPassword.Size = new System.Drawing.Size(378, 34);
             this.txtNewPassword.TabIndex = 4;
             // 
             // txtConfirmPassword
             // 
-            this.txtConfirmPassword.Location = new System.Drawing.Point(352, 149);
+            this.txtConfirmPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtConfirmPassword.Location = new System.Drawing.Point(352, 174);
             this.txtConfirmPassword.Name = "txtConfirmPassword";
             this.txtConfirmPassword.PasswordChar = '*';
-            this.txtConfirmPassword.Size = new System.Drawing.Size(297, 22);
+            this.txtConfirmPassword.Size = new System.Drawing.Size(378, 34);
             this.txtConfirmPassword.TabIndex = 5;
             // 
             // btnChangePassword
             // 
-            this.btnChangePassword.Location = new System.Drawing.Point(178, 222);
+            this.btnChangePassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChangePassword.Location = new System.Drawing.Point(130, 250);
             this.btnChangePassword.Name = "btnChangePassword";
-            this.btnChangePassword.Size = new System.Drawing.Size(139, 44);
+            this.btnChangePassword.Size = new System.Drawing.Size(212, 52);
             this.btnChangePassword.TabIndex = 6;
             this.btnChangePassword.Text = "Đổi mật khẩu";
             this.btnChangePassword.UseVisualStyleBackColor = true;
@@ -101,9 +109,10 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(463, 222);
+            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.Location = new System.Drawing.Point(457, 250);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(139, 44);
+            this.btnCancel.Size = new System.Drawing.Size(212, 52);
             this.btnCancel.TabIndex = 7;
             this.btnCancel.Text = "Hủy\r\n";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -113,6 +122,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(800, 336);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnChangePassword);
@@ -123,7 +133,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "frmChangePassword";
-            this.Text = "frmChangePassword";
+            this.Text = "Thay đổi mật khẩu";
             this.Load += new System.EventHandler(this.frmChangePassword_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

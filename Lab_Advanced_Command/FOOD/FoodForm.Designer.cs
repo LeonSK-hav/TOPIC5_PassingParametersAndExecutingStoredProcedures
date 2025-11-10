@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FoodForm));
             this.cbbCategory = new System.Windows.Forms.ComboBox();
             this.dgvFoodList = new System.Windows.Forms.DataGridView();
             this.ctmFoodList = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -50,6 +51,7 @@
             // cbbCategory
             // 
             this.cbbCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbbCategory.ForeColor = System.Drawing.Color.MediumVioletRed;
             this.cbbCategory.FormattingEnabled = true;
             this.cbbCategory.Location = new System.Drawing.Point(224, 31);
             this.cbbCategory.Name = "cbbCategory";
@@ -59,6 +61,7 @@
             // 
             // dgvFoodList
             // 
+            this.dgvFoodList.BackgroundColor = System.Drawing.Color.Pink;
             this.dgvFoodList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvFoodList.ContextMenuStrip = this.ctmFoodList;
             this.dgvFoodList.Location = new System.Drawing.Point(2, 78);
@@ -110,70 +113,77 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.MediumVioletRed;
             this.label1.Location = new System.Drawing.Point(12, 34);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(171, 22);
+            this.label1.Size = new System.Drawing.Size(190, 25);
             this.label1.TabIndex = 2;
             this.label1.Text = "Chọn nhóm món ăn:";
             // 
             // lbl2
             // 
             this.lbl2.AutoSize = true;
-            this.lbl2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl2.ForeColor = System.Drawing.Color.MediumVioletRed;
             this.lbl2.Location = new System.Drawing.Point(52, 591);
             this.lbl2.Name = "lbl2";
-            this.lbl2.Size = new System.Drawing.Size(82, 22);
+            this.lbl2.Size = new System.Drawing.Size(106, 29);
             this.lbl2.TabIndex = 3;
             this.lbl2.Text = "Có tất cả";
             // 
             // lbl4
             // 
             this.lbl4.AutoSize = true;
-            this.lbl4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl4.Location = new System.Drawing.Point(280, 591);
+            this.lbl4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl4.ForeColor = System.Drawing.Color.MediumVioletRed;
+            this.lbl4.Location = new System.Drawing.Point(491, 591);
             this.lbl4.Name = "lbl4";
-            this.lbl4.Size = new System.Drawing.Size(167, 22);
+            this.lbl4.Size = new System.Drawing.Size(222, 29);
             this.lbl4.TabIndex = 4;
             this.lbl4.Text = "món ăn thuộc nhóm";
             // 
             // lblQuantity
             // 
             this.lblQuantity.AutoSize = true;
-            this.lblQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQuantity.Location = new System.Drawing.Point(175, 591);
+            this.lblQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuantity.ForeColor = System.Drawing.Color.MediumVioletRed;
+            this.lblQuantity.Location = new System.Drawing.Point(219, 591);
             this.lblQuantity.Name = "lblQuantity";
-            this.lblQuantity.Size = new System.Drawing.Size(25, 22);
+            this.lblQuantity.Size = new System.Drawing.Size(31, 29);
             this.lblQuantity.TabIndex = 5;
             this.lblQuantity.Text = "...";
             // 
             // lblCatName
             // 
             this.lblCatName.AutoSize = true;
-            this.lblCatName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCatName.Location = new System.Drawing.Point(486, 591);
+            this.lblCatName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCatName.ForeColor = System.Drawing.Color.MediumVioletRed;
+            this.lblCatName.Location = new System.Drawing.Point(788, 591);
             this.lblCatName.Name = "lblCatName";
-            this.lblCatName.Size = new System.Drawing.Size(25, 22);
+            this.lblCatName.Size = new System.Drawing.Size(31, 29);
             this.lblCatName.TabIndex = 6;
             this.lblCatName.Text = "...";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(570, 39);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.MediumVioletRed;
+            this.label2.Location = new System.Drawing.Point(570, 32);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(157, 22);
+            this.label2.Size = new System.Drawing.Size(172, 25);
             this.label2.TabIndex = 7;
             this.label2.Text = "Tìm kiếm theo tên:";
             // 
             // txtSearchByName
             // 
             this.txtSearchByName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearchByName.Location = new System.Drawing.Point(793, 31);
+            this.txtSearchByName.ForeColor = System.Drawing.Color.MediumVioletRed;
+            this.txtSearchByName.Location = new System.Drawing.Point(777, 31);
             this.txtSearchByName.Multiline = true;
             this.txtSearchByName.Name = "txtSearchByName";
-            this.txtSearchByName.Size = new System.Drawing.Size(277, 30);
+            this.txtSearchByName.Size = new System.Drawing.Size(293, 30);
             this.txtSearchByName.TabIndex = 8;
             this.txtSearchByName.TextChanged += new System.EventHandler(this.txtSearchByName_TextChanged);
             // 
@@ -181,6 +191,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.MintCream;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1093, 646);
             this.Controls.Add(this.txtSearchByName);
             this.Controls.Add(this.label2);

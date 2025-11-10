@@ -16,7 +16,7 @@ namespace Lab_Advanced_Command
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AccountForm());
+            Application.Run(new FormControler());
         }
     }
 }
